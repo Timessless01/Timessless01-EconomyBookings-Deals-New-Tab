@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "EconomyBookings Deals New Tab",
+  "version": "1.0",
+  "description": "Replace Chrome's new tab with EconomyBookings car rental deals.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": ["storage"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; frame-src https://tp.media https://c10.travelpayouts.com; object-src 'self'"
+  }
+}
